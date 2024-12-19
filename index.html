@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo HM Decants & Fragance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HM Decants & Fragance</h1>
+        <p>"Il Profumo dell’Eleganza, un tocco di magia in ogni essenza."</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#pedido">Pedido</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="catalogo">
+            <h2>Catálogo</h2>
+            <div class="categoria">
+                <h3>Diseñador</h3>
+                <ul>
+                    <li>Prada Luna Rossa Ocean - 5ml (Q90), 10ml (Q170)</li>
+                    <li>Chanel Allure Home Sport Superleggera - 5ml (Q140), 10ml (Q280)</li>
+                    <!-- Agregar más perfumes -->
+                </ul>
+            </div>
+            <div class="categoria">
+                <h3>Árabes</h3>
+                <ul>
+                    <li>Club de Nuit Intense - 5ml (Q55), 10ml (Q100)</li>
+                    <li>Hawas Rasasi - 5ml (Q75), 10ml (Q150)</li>
+                    <!-- Agregar más perfumes -->
+                </ul>
+            </div>
+            <!-- Más categorías -->
+        </section>
+        <section id="pedido">
+            <h2>Realiza tu pedido</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="perfume">Perfume:</label>
+                <select id="perfume" name="perfume" required>
+                    <option value="Prada Luna Rossa Ocean">Prada Luna Rossa Ocean</option>
+                    <option value="Chanel Allure Home Sport Superleggera">Chanel Allure Home Sport Superleggera</option>
+                    <!-- Agregar más opciones -->
+                </select>
+                
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" required>
+                
+                <label for="mensaje">Mensaje adicional:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Instagram: <a href="https://instagram.com/decants_hm" target="_blank">@decants_hm</a></p>
+            <p>WhatsApp: <a href="https://wa.me/50231752729" target="_blank">(502) 3175-2729</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HM Decants & Fragance. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+    
